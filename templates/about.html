@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+    <style>
+.container {
+    height: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .w3-display-topleft {  
+  width: 100%;
+  padding: 20px;
+  padding-top: 70px;}
+
+  .main1{
+  padding-top: 150px;
+}
+</style>
+</head>
+
+
+<body>
+
+	<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+  		<ul class="navbar-nav ml-auto">
+    		<li class="nav-item">
+      			<a class="nav-link" href="#">Problem</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="#">Dataset</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="#">About</a>
+    		</li>
+  		</ul>
+	</nav>
+
+ <div class="w3-display-topleft"> 
+    <h1><B>Mice Protien Prediction</B></h1>
+</div>
+
+  <div class="container">
+  <h3>This project in based on multi-classification of Mice protein expression data . We build end to end project till deployment on Google cloud platform. and on client side as well. For api creation we used Flask and jinja. For classification we used three different techniques random forest,decision tree,KNN. we also used dask dataframe instead of pandas dataframe in the final deployment module(dask dataframe support parallel processing).we also implement logging system for maintaining log records of the application.<br>All this project code, development versions,you will find in ineuron repository.</h3>
+ 
+  
+  </div> 
+
+
+<div class="container">
+
+<a class="btn btn-outline-primary" href="https://github.com/akash9579/ineuron" role="button">github link</a>
+
+
+</div>
+
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</body>
+
+
+</html>

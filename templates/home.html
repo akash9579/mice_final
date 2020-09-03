@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<!--link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+
+    <style>
+    .w3-display-topleft {  
+  width: 100%;
+  padding: 20px;
+  padding-top: 70px;}
+ 
+  .id{  
+  padding-left: 20px;
+  padding-top: 0px;}
+
+    .id1{  
+  padding-left: 20px;
+  padding-bottom: 40px
+}
+
+  .main1{
+  padding-top: 100px;
+
+
+
+
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+  		<ul class="navbar-nav ml-auto">
+    		<li class="nav-item">
+      			<a class="nav-link" href="{{ url_for('problem')}}">Problem</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="{{ url_for('dashboard')}}">Dashboard</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="{{ url_for('about')}}">About</a>
+    		</li>
+  		</ul>
+	</nav>
+
+
+
+
+
+<div class="main">
+ <div class="w3-display-topleft"> 
+    <h1><B>Mice Protien Prediction</B></h1>
+</div>
+
+
+<div class="id"> 
+    <h3><B>Problem Statement</B></h3>
+</div>
+
+<div class="id1"> 
+    <h5><p>The protein classification is done by the clinical laboratories with the help of chemical bonds of proteins. Although, this process is very authentic, but it consumes a lot of resources and man power and still a lot of proteins are un-reviewed are not classified in any type. So in this we have classified various protein classes of mice by using Machine learning classisification methods
+    <br><strong>*file name must be filecheck.csv<br></strong><strong>*only after Prediction Using KNeighbors start re-training model</strong></p></h5>
+</div>
+
+
+<div class="container">
+	
+		<div class="text-center">
+
+
+			<form method="POST" action="" enctype="multipart/form-data">
+          
+            
+      			
+
+                <div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" id="customFile" name="file">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+
+
+      			<p><input type="submit" class="btn btn-primary" value="Submit"></p>
+            
+    		</form>
+    		
+		</div>
+	
+    <div class="text-center">
+    
+            </br>
+
+        <a  href="{{ url_for('predict')}}" class="btn btn-info btn-lg"   role="button" >Prediction Using DecisionTree</a> 
+        <a  href="{{ url_for('predict1')}}" class="btn btn-info btn-lg"   role="button" >Prediction Using KNeighbors</a>
+        <a  href="{{ url_for('predict2')}}" class="btn btn-info btn-lg"   role="button" >Prediction Using RandomForest</a>
+        </br>
+        <br>
+
+     <a  href="{{ url_for('train')}}" class="btn btn-primary btn-lg btn-block"  role="button" > Re-Train Model </a> 
+
+
+    </div>
+
+	
+ </div>
+</div> 
+ 
+</body>
+
+
+</html>
